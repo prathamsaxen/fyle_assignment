@@ -9,3 +9,16 @@ const slider = (input) => {
     .getElementById(input)
     .scrollIntoView({ behavior: "smooth", block: "center" });
 };
+
+// onclick="slider_project(0)"
+const slider_project = (input) => {
+  const items = document.querySelectorAll(".content_item_slider");
+  items.forEach((item) => {
+    item.classList.remove("active_slider_project");
+  });
+
+  items[input].classList.add("active_slider_project");
+  document
+    .getElementById(`${input}_image`)
+    .scrollIntoView({ behavior: "smooth", block: "center" });
+};
