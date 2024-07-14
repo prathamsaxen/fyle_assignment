@@ -7,6 +7,7 @@
   --dark_white: #fafafa;
   --regular_font: "Cormorant SC", serif;
   --gray_color: #f6f6f6;
+  --gray_font_color:#808080;
 }
 
 ::-webkit-scrollbar {
@@ -476,4 +477,49 @@ body {
 .growth_card:hover{
   box-shadow: 3px 6px 20px #672C2C1F;
   transform: scale(1.01);
+}
+
+.client_feedback{
+  /* border: 2px solid red; */
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  h2{
+    color: var(--red_color);
+    font-size: 1rem;
+  }
+  h3{
+    margin-top: 15px;
+  }
+  p{
+    width: 65%;
+    margin: auto;
+    text-align: center;
+    margin-top: 25px;
+    font-size: .8rem;
+    /* border: 2px solid red; */
+    padding: 0;
+  }
+  p:last-of-type{
+    text-align: left;
+    font-size: .5rem;
+    padding: 10px;
+    font-weight: bold;
+    span{
+      color: var(--red_color);
+    }
+    color: var(--gray_font_color);
+  }
+}
+
+footer{
+  /* border: 2px solid red; */
+  min-height: 120px;
+  background-color: var(--red_color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img{
+    width: 60%;
+  }
 }
