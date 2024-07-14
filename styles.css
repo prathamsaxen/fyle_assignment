@@ -301,3 +301,46 @@ body {
     background-color: var(--red_color);
   }
 }
+
+
+.our_best_section{
+  /* border: 2px solid red; */
+  padding-top: 50px;
+  padding-bottom: 50px;
+  h2{
+    color: var(--red_color);
+    text-align: center;
+    font-family: Cormorant SC;
+    font-size: .9rem;
+  }
+  h3{
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bolder;
+    font-size: 1.2rem;
+  }
+}
+
+.cards_best_section{
+  /* border: 1px solid red; */
+  width: 65%;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.card_best{
+  padding: 10px;
+  img{
+    width: 35px !important;
+  }
+  p:first-of-type{
+    /* border: 2px solid red; */
+    font-size: .5rem;
+    font-weight: bold;
+  }
+  p:last-of-type{
+    font-size: .6rem;
+    margin-top: 5px;
+  }
+}
