@@ -5,6 +5,7 @@ const slider = (input) => {
   });
 
   buttons[input].classList.add("active_button");
-  document.getElementById(input).scrollIntoView({ behavior: 'smooth', block: 'center' });
-
+  document
+    .getElementById(input)
+    .scrollIntoView({ behavior: "smooth", block: "center" });
 };
