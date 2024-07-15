@@ -7,6 +7,7 @@
     <title>Fyle</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="shortcut icon" href="https://www.fylehq.com/assets/images/favicon/favicon-32x32.png" type="image/x-icon">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -21,7 +22,7 @@
                     Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentesque vitae ante at elit
                     fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum
                 </p>
-                <button>Contact Us</button>
+                <button type="button" class="btn btn-primary" id="openModalBtn">Contact Us</button>
             </div>
             <div class="image_award">
                 <img src="./assets//hero@2x.png" alt="Error in Loading" srcset="">
@@ -239,7 +240,44 @@
     <footer>
         <img src="./assets/Group 500.png" alt="Error in Loading" srcset="">
     </footer>
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Form Title</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="./script.js"></script>
 
 </html>

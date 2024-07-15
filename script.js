@@ -22,3 +22,12 @@ const slider_project = (input) => {
     .getElementById(`${input}_image`)
     .scrollIntoView({ behavior: "smooth", block: "center" });
 };
+
+$(document).ready(function(){
+  $("#openModalBtn").click(function(){
+      $("#myModal").modal({
+          backdrop: true,
+          keyboard: false
+      });
+  });
+});
