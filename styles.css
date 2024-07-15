@@ -531,31 +531,32 @@ footer {
   }
 }
 
-.modal-body{
+.modal-body {
   /* border: 2px solid red; */
+  /* max-width: 500px !important; */
   padding: 30px !important;
-  form{
+  form {
     display: flex !important;
     gap: 20px !important;
     flex-direction: column;
     font-family: Poppins !important;
     text-transform: capitalize;
-    h3{
+    h3 {
       color: var(--black_color);
       font-weight: bold;
     }
-    input{
+    input {
       padding: 4px;
       outline: none;
       border: none;
       border-bottom: 1px solid var(--gray_font_color);
     }
-    div{
+    div {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-    button{
+    button {
       background-color: var(--red_color);
       color: var(--dark_white);
       padding: 10px;
@@ -564,4 +565,8 @@ footer {
       border-radius: 6px;
     }
   }
+}
+
+.modal-dialog{
+  max-width: 500px !important;
 }
