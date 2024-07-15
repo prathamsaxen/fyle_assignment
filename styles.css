@@ -520,23 +520,48 @@ body {
 }
 
 footer {
-  /* border: 2px solid red; */
-  /* min-height: 120px;
   background-color: var(--red_color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow: none;
+  height: 120px;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
   img {
-    width: 60%;
-    margin: auto;
-  } */
-   background-color: var(--red_color);
-   overflow: none;
-   height: 120px;
-   display: flex !important;
-   justify-content: center !important;
-   align-items: center !important;
-   img{
     width: 70%;
-   }
+  }
+}
+
+.modal-body{
+  /* border: 2px solid red; */
+  padding: 30px !important;
+  form{
+    display: flex !important;
+    gap: 20px !important;
+    flex-direction: column;
+    font-family: Poppins !important;
+    text-transform: capitalize;
+    h3{
+      color: var(--black_color);
+      font-weight: bold;
+    }
+    input{
+      padding: 4px;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid var(--gray_font_color);
+    }
+    div{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    button{
+      background-color: var(--red_color);
+      color: var(--dark_white);
+      padding: 10px;
+      border: none;
+      outline: none;
+      border-radius: 6px;
+    }
+  }
 }
